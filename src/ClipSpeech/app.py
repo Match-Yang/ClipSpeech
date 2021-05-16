@@ -14,7 +14,7 @@ from Settings import Settings
 
 
 def main():
-    sys.argv +=['--style', 'material`']
+    # sys.argv +=['--style', 'material`']
     QGuiApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
     app = QGuiApplication(sys.argv)
     speech = Speech()

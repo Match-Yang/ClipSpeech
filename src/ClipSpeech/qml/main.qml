@@ -16,7 +16,7 @@ ApplicationWindow {
 
         SimpleSynthesizePage {}
 
-        Rectangle {}
+        SubtitlesPage {}
 
         Rectangle {}
 
@@ -46,7 +46,7 @@ ApplicationWindow {
                     title: qsTr("简单合成")
                     padding: 30
                     iconTitleSpacing: 5
-                    backgroundColor: "red"
+                    backgroundColor: "#00BCD4"
                     frontgroundColor: "#ffffff"
                     selected: slidingTabBar.currentIndex == 0
                     onClicked: {
@@ -59,7 +59,7 @@ ApplicationWindow {
                     title: qsTr("字幕合成")
                     padding: 20
                     iconTitleSpacing: 5
-                    backgroundColor: "#99f5cf8e"
+                    backgroundColor: "#00BCD4"
                     frontgroundColor: "#ffffff"
                     selected: slidingTabBar.currentIndex == 1
                     onClicked: {
@@ -72,7 +72,7 @@ ApplicationWindow {
                     title: qsTr("高级合成")
                     padding: 20
                     iconTitleSpacing: 5
-                    backgroundColor: "#99d75656"
+                    backgroundColor: "#00BCD4"
                     frontgroundColor: "#ffffff"
                     selected: slidingTabBar.currentIndex == 2
                     onClicked: {
@@ -83,9 +83,9 @@ ApplicationWindow {
                     title: qsTr("设置")
                     padding: 20
                     iconTitleSpacing: 5
-                    backgroundColor: "#99d75656"
+                    backgroundColor: "#00BCD4"
                     frontgroundColor: "#ffffff"
-                    selected: slidingTabBar.currentIndex == 2
+                    selected: slidingTabBar.currentIndex == 3
                     onClicked: {
                         slidingTabBar.currentIndex = 3
                     }

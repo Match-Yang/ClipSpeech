@@ -224,7 +224,7 @@ Item {
                                               ) + "%") : (volumeSlider.value.toString(
                                                               ) + "%")
                     }
-                    speech.start_simple_tts(JSON.stringify(info))
+                    speech.start_simple_tts(editor.text, JSON.stringify(info))
                     //enabled = false
                 }
                 Connections {

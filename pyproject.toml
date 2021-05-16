@@ -13,7 +13,7 @@ description = "Super speech"
 icon = "src/ClipSpeech/resources/ClipSpeech"
 sources = ['src/ClipSpeech']
 requires = [
-    'pyside2==5.13.0','azure-cognitiveservices-speech=1.16.0']
+    'pyside2==5.13.0','azure-cognitiveservices-speech=1.16.0', 'srt']
 
 
 [tool.briefcase.app.ClipSpeech.macOS]
