@@ -19,6 +19,8 @@ ApplicationWindow {
         Rectangle {}
 
         Rectangle {}
+
+        SettingsPage {}
     }
     //    background: Rectangle {
     //        color: "#090c12"
@@ -75,6 +77,17 @@ ApplicationWindow {
                     selected: slidingTabBar.currentIndex == 2
                     onClicked: {
                         slidingTabBar.currentIndex = 2
+                    }
+                }
+                SlidingTabButton {
+                    title: qsTr("设置")
+                    padding: 20
+                    iconTitleSpacing: 5
+                    backgroundColor: "#99d75656"
+                    frontgroundColor: "#ffffff"
+                    selected: slidingTabBar.currentIndex == 2
+                    onClicked: {
+                        slidingTabBar.currentIndex = 3
                     }
                 }
             }

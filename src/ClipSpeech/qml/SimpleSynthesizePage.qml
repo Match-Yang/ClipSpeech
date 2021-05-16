@@ -132,7 +132,7 @@ Item {
                     id: pitchSlider
                     width: 200
                     from: -10
-                    value: 1
+                    value: 0
                     to: 10
                     stepSize: 1
                     handle: Rectangle {

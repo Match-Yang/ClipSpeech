@@ -18,6 +18,13 @@ class Speech(QObject):
 
     def __init__(self):
         super(Speech, self).__init__(parent=None)
+        self._subscription = ""
+        self._region = ""
+
+    @Slot(str, str)
+    def set_auth(self, subscription: str, region: str):
+        self._subscription = subscription
+        self._region = region
 
     @Slot(str)
     def log_from_qml(self, log: str):
@@ -38,7 +45,7 @@ class Speech(QObject):
         if obj['context'] == '':
             self.failed.emit()
             return
-        speech_config = SpeechConfig(subscription="", region="")
+        speech_config = SpeechConfig(subscription=self._subscription, region=self._region)
         audio_config = AudioOutputConfig(use_default_speaker=True)
         synthesizer = SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
         ssml_str = '''
