@@ -6,7 +6,7 @@ import sys
 import os
 import json
 import srt
-import requests
+# import requests
 from PySide2.QtCore import QObject, Slot, Signal
 from PySide2.QtCore import QStandardPaths
 from azure.cognitiveservices.speech import AudioDataStream, SpeechConfig, SpeechSynthesizer, SpeechSynthesisOutputFormat
