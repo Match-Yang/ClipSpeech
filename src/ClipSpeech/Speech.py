@@ -35,7 +35,7 @@ class Speech(QObject):
     @Slot(result=str)
     def voices_json_config(self):
         try:
-            with open('resources/config/voices_config.json', mode='r', encoding='utf-8') as file:
+            with open(os.path.join(os.path.dirname(__file__), 'resources/config/voices_config.json'), mode='r', encoding='utf-8') as file:
                 return file.read()
         except:
             return ""
